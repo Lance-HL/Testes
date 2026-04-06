@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+public class Exercicio19 {
+public static void main(String[] args) {
+    String username = JOptionPane.showInputDialog("Digite seu nome de usuário:");
+    String ValorA = JOptionPane.showInputDialog("Insira o valor:");
+        int A = Integer.parseInt(ValorA);
+        int i = 0;
+    do {
+        JOptionPane.showMessageDialog(null, username);
+        i++;
+        } while (i < A);
+}
+}
