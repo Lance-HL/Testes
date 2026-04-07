@@ -1,0 +1,17 @@
+
+import javax.swing.JOptionPane;
+
+public class exercicio22 {
+
+    public static void main(String[] args) {
+        double numero = 1;
+        double soma = 0;
+        int contador = 0;
+        do { soma += numero;
+            contador++;
+            numero++;
+        } while (contador <= 1000);
+        double media = soma / contador;
+        JOptionPane.showMessageDialog(null, media);
+    }
+}
