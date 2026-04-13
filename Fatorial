@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+
+public class Principal {
+    public static void main(String[] args) {
+        System.out.println("Fatoriais");
+        int i = Integer.parseInt (JOptionPane.showInputDialog("Insira um valor inteiro."));
+        int j = i;
+        int fatorial = 1;
+        while (j > 0) {
+            fatorial = fatorial * j;
+                    j--;
+            }
+        System.out.println("O fatorial de " + i + " = " + fatorial);
+        }
+    }
