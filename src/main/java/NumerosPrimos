@@ -1,0 +1,29 @@
+
+import javax.swing.JOptionPane;
+
+public class Numeros_Primos {
+
+    public static void main(String[] args) {
+        
+        int n = Integer.parseInt(JOptionPane.showInputDialog("Inisira um numero positivo."));
+        int ContaDivisores = 0;
+        
+        boolean ehprimo = false;
+
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                ContaDivisores = ContaDivisores + 1;
+            }
+        }
+        if (ContaDivisores == 2) {
+        ehprimo = true;
+        }
+        if (ehprimo == true) {
+            System.out.println("O numero " + n + " é primo");
+        } else {
+            System.out.println("O numero " + n + " não é primo");
+        }
+
+    }
+
+}
